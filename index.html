@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Philosopher:wght@700&display=swap"
+      rel="stylesheet">
+
+   <link rel="stylesheet" href="./style.css">
+
+   <title>Axie Energy Counter</title>
+</head>
+
+<body>
+   <div class="grid">
+      <header class="header greyBackground">
+         <h1>Axie Energy Counter</h1>
+      </header>
+
+
+      <!-- <main class="energyContainer"> -->
+      <h4 id="roundCounter" class="roundCounter greyBackground">Ronda #</h4>
+
+      <h4 id="energyCounter" class="energyCounter greyBackground">Energy: #/10</h4>
+
+      <div class="minusBtn greyBackground">
+         <input type="button" class="btn" value="-1" onclick="decreaseEnergy()">
+      </div>
+
+      <div class="plusBtn greyBackground">
+         <input type="button" class="btn" value="+1" onclick="increaseEnergy()">
+      </div>
+
+      <div class="nextBtn greyBackground">
+         <input type="button" class="btn" value="Siguiente" onclick="nextRound()">
+      </div>
+      <div class="newBtn greyBackground">
+         <input type="button" class="btn redBackground" value="Nueva" onclick="newGame()">
+      </div>
+      <!-- </main> -->
+
+      <footer class="footer">
+         <h6><em>Copyright © 2021</em></h6>
+      </footer>
+   </div>
+
+   <script src="./index.js"></script>
+</body>
+
+</html>

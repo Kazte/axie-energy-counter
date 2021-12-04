@@ -1,0 +1,199 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Chakra Petch', sans-serif;
+   background-color: #c68c6b;
+   text-align: center;
+}
+
+h1 {
+   font-family: 'Philosopher', sans-serif;
+   font-size: 4rem;
+}
+
+h4 {
+   font-size: 1.3rem;
+}
+
+.grid {
+   width: 75%;
+   margin: 2.5% auto;
+
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
+   grid-template-rows: repeat(3, 1fr);
+   grid-template-areas:
+      "header header header header header header"
+      "roundCounter energyCounter minusBtn plusBtn nextBtn newBtn"
+      "footer footer footer footer footer footer"
+   ;
+}
+
+.header {
+   grid-area: header;
+   padding: 20px;
+   margin: 20px;
+   font-weight: bold;
+}
+
+.roundCounter {
+   grid-area: roundCounter;
+   padding: 20px;
+   margin: 20px;
+   font-weight: bold;
+}
+
+.energyCounter {
+   grid-area: energyCounter;
+   padding: 20px;
+   margin: 20px;
+   font-weight: bold;
+}
+
+.plusBtn {
+   grid-area: plusBtn;
+   padding: 20px;
+   margin: 20px;
+}
+
+.minusBtn {
+   grid-area: minusBtn;
+   padding: 20px;
+   margin: 20px;
+}
+
+.nextBtn {
+   grid-area: nextBtn;
+   padding: 20px;
+   margin: 20px;
+}
+
+.nextBtn input {
+   width: 90%;
+}
+
+.newBtn {
+   grid-area: newBtn;
+   padding: 20px;
+   margin: 20px;
+}
+
+.newBtn input {
+   width: 90%;
+}
+
+.footer {
+   grid-area: footer;
+   padding: 20px;
+   margin: 20px;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.btn {
+   padding: 10px 20px;
+   font-size: 1.2rem;
+   font-family: 'Chakra Petch', sans-serif;
+   font-weight: bold;
+   border: none;
+}
+
+.btn:hover {
+   background-color: #c2c2c2;
+   border: none;
+}
+
+.btn:active {
+   background-color: #9c9c9c;
+}
+
+.redBackground {
+   background-color: crimson;
+   color: white;
+}
+
+.redBackground:hover {
+   background-color: rgb(163, 13, 43);
+}
+
+.redBackground:active {
+   background-color: rgb(124, 10, 33);
+}
+
+.greyBackground {
+   /* background-color: grey; */
+}
+
+@media only screen and (max-width: 768px) {
+   .grid {
+      width: 95%;
+      margin: 2.5% auto;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(7, 20%);
+      grid-template-areas:
+         "header header "
+         "roundCounter roundCounter"
+         "energyCounter energyCounter"
+         "minusBtn plusBtn"
+         "nextBtn nextBtn"
+         "newBtn newBtn "
+         "footer footer"
+      ;
+   }
+
+   h1 {
+      font-size: 2rem;
+   }
+
+   .header {
+      grid-area: header;
+      padding: 0;
+      margin: 0;
+   }
+
+   .roundCounter {
+      grid-area: roundCounter;
+      justify-self: center;
+      padding: 0;
+      margin: 0;
+   }
+
+   .energyCounter {
+      grid-area: energyCounter;
+      justify-self: center;
+      padding: 0;
+      margin: 0;
+   }
+
+   .plusBtn {
+      grid-area: plusBtn;
+      padding: 0;
+      margin: 0;
+   }
+
+   .minusBtn {
+      grid-area: minusBtn;
+      padding: 0;
+      margin: 0;
+   }
+
+   .nextBtn {
+      grid-area: nextBtn;
+      padding: 0;
+      margin: 0;
+   }
+
+   .newBtn {
+      grid-area: newBtn;
+      padding: 0;
+      margin: 0;
+   }
+}

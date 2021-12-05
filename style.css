@@ -23,7 +23,7 @@ h4 {
 }
 
 .grid {
-   width: 75%;
+   width: 95%;
    margin: 2.5% auto;
 
    display: grid;
@@ -81,6 +81,10 @@ h4 {
    margin: 20px;
 }
 
+.newBtn .btn {
+   width: 100%;
+}
+
 .footer {
    grid-area: footer;
    padding: 20px;
@@ -126,12 +130,13 @@ h4 {
    /* background-color: grey; */
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1250px) {
    .grid {
-      width: 95%;
+      width: 50%;
       margin: 2.5% auto;
 
       display: grid;
+      gap: 0px 10px;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(7, 20%);
       grid-template-areas:
@@ -194,7 +199,11 @@ h4 {
    }
 
    .btn {
-      width: 90%;
+      width: 100%;
       margin: 0px auto;
+   }
+
+   .newBtn .btn {
+      width: 100%;
    }
 }

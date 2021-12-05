@@ -38,4 +38,5 @@ function newGame() {
    currentEnergy = 3;
    currentRound = 1;
    setEnergy();
+   setRound();
 }
